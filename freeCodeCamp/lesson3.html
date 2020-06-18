@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,33 +9,88 @@
     h4 {
       text-align: center;
     }
+
     p {
       text-align: justify;
+      background-color: rgba(45, 45, 45, 0.1);
+      padding: 10px;
+      font-size: 27px;
+      ;
+      box-shadow: 0, 0, 0, 0.15;
+    }
+
+    h1 {
+      font-size: 68px;
+    }
+
+    h2 {
+      font-size: 52px;
+    }
+
+    h3 {
+      font-size: 40px;
+    }
+
+    h4 {
+      font-size: 32px;
+    }
+
+    h5 {
+      font-size: 21px;
+    }
+
+    h6 {
+      font-size: 14px;
     }
   </style>
 </head>
+
 <body>
   <h1>Introduction to the Applied Visual Design Challenges</h1>
   <h4>text-align</h4>
-  <p>Metin genellikle web içeriğinin büyük bir parçasıdır. CSS'nin text-alignözellik ile nasıl hizalanacağına ilişkin birkaç seçeneği vardır .
-    text-align: justify; son satır dışındaki tüm metin satırlarının satır kutusunun sol ve sağ kenarlarını karşılamasına neden olur.
+  <p>Metin genellikle web içeriğinin büyük bir parçasıdır. CSS'nin text-alignözellik ile nasıl hizalanacağına ilişkin
+    birkaç seçeneği vardır .
+    text-align: justify; son satır dışındaki tüm metin satırlarının satır kutusunun sol ve sağ kenarlarını karşılamasına
+    neden olur.
     text-align: center; metni ortalar
     text-align: right; metni sağa hizalar
     Ve text-align: left;(varsayılan) metni sola hizalar.</p>
+  <h4>text-decoration: underline</h4>
+  <p>
+    Metnin altını çizmek için uetiketi kullanabilirsiniz . Bu genellikle metnin bir bölümünün veya hatırlanması gereken
+    bir şeyin önemli
+    olduğunu belirtmek için kullanılır. uEtiketi ile tarayıcı text-decoration: underline;öğeye CSS değerini uygular .
+  </p>
+  <h4>font-size</h4>
+  <p>Başlık etiketleri (yazı tipi boyutu h1ile h6) genel olarak paragraf etiketlerinin yazı tipi boyutundan daha büyük
+    olmalıdır.
+    Bu, kullanıcının sayfadaki her şeyin düzenini ve önem düzeyini görsel olarak anlamasını kolaylaştırır.
+    font-sizeÖzelliği, bir öğedeki
+    metnin boyutunu ayarlamak için kullanırsınız .</p>
+  <h1>This is h1 text</h1>
+  <h2>This is h2 text</h2>
+  <h3>This is h3 text</h3>
+  <h4>This is h4 text</h4>
+  <h5>This is h5 text</h5>
+  <h6>This is h6 text</h6>
+    <h4>position</h4>
+    <p>CSS, her HTML öğesini genellikle CSS Kutu Modeli olarak adlandırılan kendi kutusu olarak kabul eder. 
+      Blok düzeyinde öğeler otomatik olarak yeni bir satırda (düşünme başlıkları, paragraflar ve bölümler) başlarken,
+       satır içi öğeler çevreleyen içerikte (resimler veya açıklıklar gibi) yer alır. Öğelerin bu şekilde varsayılan düzenine bir belgenin normal akışı denir, 
+       ancak CSS bunu geçersiz kılmak için position özelliğini sunar.</p>
 
-
-
-    <div class="fullCard">
-      <div class="cardContent">
-        <div class="cardText">
-          <h4>Google</h4>
-          <p>Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University.</p>
-        </div>
-        <div class="cardLinks">
-          <a href="https://en.wikipedia.org/wiki/Larry_Page" target="_blank" class="links">Larry Page</a>
-          <a href="https://en.wikipedia.org/wiki/Sergey_Brin" target="_blank" class="links">Sergey Brin</a>
-        </div>
+  <div class="fullCard">
+    <div class="cardContent">
+      <div class="cardText">
+        <h4>Google</h4>
+        <p>Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University.</p>
+      </div>
+      <div class="cardLinks">
+        <a href="https://en.wikipedia.org/wiki/Larry_Page" target="_blank" class="links">Larry Page</a>
+        <a href="https://en.wikipedia.org/wiki/Sergey_Brin" target="_blank" class="links">Sergey Brin</a>
       </div>
     </div>
+  </div>
 </body>
+
 </html>
