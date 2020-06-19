@@ -1,15 +1,15 @@
 {
   "name": "freecodecamp",
   "version": "1.0.0",
+  "source": ["style.scss"],
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --watch scss -o css"
+    "compile:sass": "node-sass Projects/TributePage/sass/main.scss Projects/TributePage/css/main.css -w"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "node-sass": "^4.14.1"
   }
-}
+} 
