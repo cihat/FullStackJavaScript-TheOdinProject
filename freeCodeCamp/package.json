@@ -5,7 +5,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass Projects/TributePage/sass/* Projects/TributePage/css/* -w"
+    "compile:sass": "node-sass Projects/TributePage/sass/* Projects/TributePage/css/* -w",
+    "compile:sass": "node-sass Projects/SurveyForm/sass/* Projects/SurveyForm/css/* -w"
   },
   "author": "",
   "license": "ISC",
