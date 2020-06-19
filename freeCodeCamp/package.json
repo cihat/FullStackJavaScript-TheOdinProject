@@ -1,16 +1,18 @@
 {
   "name": "freecodecamp",
   "version": "1.0.0",
-  "source": ["style.scss"],
+  "source": [
+    "style.scss"
+  ],
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass Projects/TributePage/sass/* Projects/TributePage/css/* -w",
-    "compile:sass": "node-sass Projects/SurveyForm/sass/* Projects/SurveyForm/css/* -w"
+    "compile:sass": "node-sass Projects/TributePage/sass/main.scss Projects/TributePage/css/main.css -w",
+    "compile:sass": "node-sass Projects/SurveyForm/sass/main.scss Projects/SurveyForm/css/main.css -w"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "node-sass": "^4.14.1"
   }
-} 
+}
