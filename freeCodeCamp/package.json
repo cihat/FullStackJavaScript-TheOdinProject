@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass Projects/TributePage/sass/main.scss Projects/TributePage/css/main.css -w"
+    "compile:sass": "node-sass Projects/TributePage/sass/* Projects/TributePage/css/* -w"
   },
   "author": "",
   "license": "ISC",
