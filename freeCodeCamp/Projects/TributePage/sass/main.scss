@@ -38,6 +38,12 @@ a {
 a:visited {
   color: #74638f;
 }
+a:active {
+  color: black;
+}
+a:hover {
+  color: #FF3243;
+}
 
 #main {
   margin: 30px 8px;
@@ -57,6 +63,8 @@ img {
   display: block;
   height: auto;
   margin: 0 auto;
+  // border: 5px solid red;
+  // shape-rendering: 2px 2px;
 }
 
 #figure#img-div {

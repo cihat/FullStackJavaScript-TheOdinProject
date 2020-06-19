@@ -31,6 +31,12 @@ a {
 a:visited {
   color: #74638f; }
 
+a:active {
+  color: black; }
+
+a:hover {
+  color: #FF3243; }
+
 #main {
   margin: 30px 8px;
   padding: 15px;
