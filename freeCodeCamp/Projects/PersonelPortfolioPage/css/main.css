@@ -217,7 +217,7 @@ img {
   transition: transform 0.3s ease-out; }
 
 .contact-details:hover {
-  transform: translateY(150px); }
+  transform: translateY(8px); }
 
 /* Footer */
 footer {
