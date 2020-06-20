@@ -7,23 +7,30 @@
   <title>ProductLandingPage</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <script>
+    const projectName = 'product-landing-page';
+    localStorage.setItem('example_project', 'Product Landing Page');
+  </script>
 </head>
 
 <body>
-  <header id="header">
-    <div id="logo">
-      <img src="" https://s3.amazonaws.com/freecodecamp/original_trombones.png"" alt="sitenin logosu" id="header-img">
-    </div>
+  <div id="page-wrapper">
+    <header id="header">
+      <div class="logo">
+        <img id="header-img" src="https://s3.amazonaws.com/freecodecamp/original_trombones.png"
+          alt="original trombones logo" />
+      </div>
 
-    <nav id="nav-bar">
-      <ul>
-        <li><a class="nav-link" href="#features">Features</a></li>
-        <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
-        <li><a class="nav-link" href="#pricing">Pricing</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div class="container">
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#features">Features</a></li>
+          <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+          <li><a class="nav-link" href="#pricing">Pricing</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container"></div>
 
     <section id="hero">
       <h2>Handcrafted, home-made masterpieces</h2>
@@ -32,14 +39,17 @@
         <input id="submit" type="submit" value="Get Started" class="btn" />
       </form>
     </section>
+
     <div class="container">
       <section id="features">
         <div class="grid">
           <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
           <div class="desc">
-            <h2>Premium Material</h2>
-            <p>Our trombones use the shiniest brass which is sourced locally. This
-              will increase the longevity of your purchase.</p>
+            <h2>Premium Materials</h2>
+            <p>
+              Our trombones use the shiniest brass which is sourced locally. This
+              will increase the longevity of your purchase.
+            </p>
           </div>
         </div>
         <div class="grid">
@@ -115,6 +125,7 @@
       </footer>
     </div>
   </div>
+
 </body>
 
 </html>
