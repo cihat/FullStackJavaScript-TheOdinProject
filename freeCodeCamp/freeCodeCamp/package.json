@@ -1,0 +1,21 @@
+{
+  "name": "freecodecamp",
+  "version": "1.0.0",
+  "source": [
+    "style.scss"
+  ],
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass Projects/TributePage/sass/main.scss Projects/TributePage/css/main.css -w",
+    "compile:sass": "node-sass Projects/SurveyForm/sass/main.scss Projects/SurveyForm/css/main.css -w",
+    "compile:sass": "node-sass Projects/ProductLandingPage/sass/main.scss Projects/ProductLandingPage/css/main.css -w",
+    "compile:sass": "node-sass Projects/TechicalDocPage/sass/main.scss Projects/TechicalDocPage/css/main.css -w",
+    "compile:sass": "node-sass Projects/PersonelPortfolioPage/sass/main.scss Projects/PersonelPortfolioPage/css/main.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

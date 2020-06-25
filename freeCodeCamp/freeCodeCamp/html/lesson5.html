@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    header,
+    footer {
+      display: flex;
+      flex-direction: row;
+    }
+
+    header .profile-thumbnail {
+      width: 50px;
+      height: 50px;
+      border-radius: 4px;
+    }
+
+    header .profile-name {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+    }
+
+    header .follow-btn {
+      display: flex;
+      margin: 0 0 0 auto;
+    }
+
+    header .follow-btn button {
+      border: 0;
+      border-radius: 3px;
+      padding: 5px;
+    }
+
+    header h3,
+    header h4 {
+      display: flex;
+      margin: 0;
+    }
+
+    #inner p {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    #inner hr {
+      margin: 20px 0;
+      border-style: solid;
+      opacity: 0.1;
+    }
+
+    footer .stats {
+      display: flex;
+      font-size: 15px;
+    }
+
+    footer .stats strong {
+      font-size: 18px;
+    }
+
+    footer .stats .likes {
+      margin-left: 10px;
+    }
+
+    footer .cta {
+      margin-left: auto;
+    }
+
+    footer .cta button {
+      border: 0;
+      background: transparent;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      grid-gap: 10px;
+      background-color: #2196F3;
+      padding: 10px;
+    }
+
+    .grid-container>div {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 20px 0;
+      font-size: 30px;
+    }
+
+    .item1 {
+      grid-row: 1 / span 2;
+    }
+
+    .item1 {
+      background: LightSkyBlue;
+      grid-area: header;
+    }
+
+    .item2 {
+      background: LightSalmon;
+      grid-area: advert;
+    }
+
+    .item3 {
+      background: PaleTurquoise;
+      grid-area: content;
+    }
+
+    .item4 {
+      background: lightpink;
+      grid-area: footer;
+    }
+
+    .container {
+      font-size: 1.5em;
+      min-height: 300px;
+      width: 100%;
+      background: LightGray;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 50px auto 1fr auto;
+      grid-gap: 10px;
+      grid-template-areas:
+        "header"
+        "advert"
+        "content"
+        "footer";
+    }
+
+    @media (min-width: 300px) {
+      .container {
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+          "advert header"
+          "advert content"
+          "advert footer";
+      }
+    }
+
+    @media (min-width: 400px) {
+      .container {
+        grid-template-areas:
+          /* Only change code below this line */
+          "advert header"
+          "advert content"
+          "advert footer";
+        /* Only change code above this line */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="https://freecodecamp.s3.amazonaws.com/quincy-twitter-photo.jpg" alt="Quincy Larson's profile picture"
+      class="profile-thumbnail">
+    <div class="profile-name">
+      <h3>Quincy Larson</h3>
+      <h4>@ossia</h4>
+    </div>
+    <div class="follow-btn">
+      <button>Follow</button>
+    </div>
+  </header>
+  <div id="inner">
+    <p>I meet so many people who are in search of that one trick that will help them work smart. Even if you work smart,
+      you still have to work hard.</p>
+    <span class="date">1:32 PM - 12 Jan 2018</span>
+    <hr>
+  </div>
+  <footer>
+    <div class="stats">
+      <div class="Retweets">
+        <strong>107</strong> Retweets
+      </div>
+      <div class="likes">
+        <strong>431</strong> Likes
+      </div>
+    </div>
+    <div class="cta">
+      <button class="share-btn">Share</button>
+      <button class="retweet-btn">Retweet</button>
+      <button class="like-btn">Like</button>
+    </div>
+  </footer>
+  <h4>The grid-row Property</h4>
+
+  <body>
+
+    <h1>The grid-row Property</h1>
+
+    <p>Use the <em>grid-row</em> property to specify on which row to place an item, and how many row the item will span.
+    </p>
+    <p>This property is a shorthand property for the grid-row-start and grid-row-end properties.</p>
+    <p>Item1 will start on row 1, and span 2 rows:</p>
+
+    <div class="grid-container">
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>
+      <div class="item4">4</div>
+      <div class="item5">5</div>
+      <div class="item6">6</div>
+      <div class="item7">7</div>
+    </div>
+    <h1>CSS GRID</h1>
+    <div class="container">
+      <div class="item1">header</div>
+      <div class="item2">advert</div>
+      <div class="item3">content</div>
+      <div class="item4">footer</div>
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Applied Visual Design </title>
+  <style>
+    h4 {
+      text-align: center;
+    }
+
+    p {
+      text-align: justify;
+      background-color: rgba(45, 45, 45, 0.1);
+      padding: 10px;
+      font-size: 27px;
+      ;
+      box-shadow: 0, 0, 0, 0.15;
+    }
+
+    h1 {
+      font-size: 68px;
+    }
+
+    h2 {
+      font-size: 52px;
+    }
+
+    h3 {
+      font-size: 40px;
+    }
+
+    h4 {
+      font-size: 32px;
+    }
+
+    h5 {
+      font-size: 21px;
+    }
+
+    h6 {
+      font-size: 14px;
+    }
+
+    /*top*/
+    #ball {
+      width: 100px;
+      height: 100px;
+      bottom: 50px;
+      margin: 50px auto;
+      margin-bottom: 900px;
+      position: relative;
+      border-radius: 50%;
+      background: linear-gradient(35deg,
+          #ccffff,
+          #ffcccc);
+      animation-name: bounce;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes bounce {
+      0% {
+        top: 0px;
+      }
+
+      50% {
+        top: 249px;
+        width: 130px;
+        height: 70px;
+      }
+
+      100% {
+        top: 0px;
+      }
+    }
+
+    /*kalp*/
+    .back {
+      position: fixed;
+      padding: 0;
+      margin: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: white;
+      animation-name: backdiv;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+
+    }
+
+    .heart {
+      position: absolute;
+      margin: auto;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: pink;
+      height: 50px;
+      width: 50px;
+      transform: rotate(-45deg);
+      animation-name: beat;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+
+    }
+
+    .heart:after {
+      background-color: pink;
+      content: "";
+      border-radius: 50%;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: 0px;
+      left: 25px;
+    }
+
+    .heart:before {
+      background-color: pink;
+      content: "";
+      border-radius: 50%;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: -25px;
+      left: 0px;
+    }
+
+    back @keyframes backdiv {
+      50% {
+        background: #ffe6f2;
+      }
+    }
+
+    @keyframes beat {
+      0% {
+        transform: scale(1) rotate(-45deg);
+      }
+
+      50% {
+        transform: scale(0.6) rotate(-90deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Introduction to the Applied Visual Design Challenges</h1>
+  <h4>text-align</h4>
+  <p>Metin genellikle web içeriğinin büyük bir parçasıdır. CSS'nin text-alignözellik ile nasıl hizalanacağına ilişkin
+    birkaç seçeneği vardır .
+    text-align: justify; son satır dışındaki tüm metin satırlarının satır kutusunun sol ve sağ kenarlarını karşılamasına
+    neden olur.
+    text-align: center; metni ortalar
+    text-align: right; metni sağa hizalar
+    Ve text-align: left;(varsayılan) metni sola hizalar.</p>
+  <h4>text-decoration: underline</h4>
+  <p>
+    Metnin altını çizmek için uetiketi kullanabilirsiniz . Bu genellikle metnin bir bölümünün veya hatırlanması gereken
+    bir şeyin önemli
+    olduğunu belirtmek için kullanılır. uEtiketi ile tarayıcı text-decoration: underline;öğeye CSS değerini uygular .
+  </p>
+  <h4>font-size</h4>
+  <p>Başlık etiketleri (yazı tipi boyutu h1ile h6) genel olarak paragraf etiketlerinin yazı tipi boyutundan daha büyük
+    olmalıdır.
+    Bu, kullanıcının sayfadaki her şeyin düzenini ve önem düzeyini görsel olarak anlamasını kolaylaştırır.
+    font-sizeÖzelliği, bir öğedeki
+    metnin boyutunu ayarlamak için kullanırsınız .</p>
+  <h1>This is h1 text</h1>
+  <h2>This is h2 text</h2>
+  <h3>This is h3 text</h3>
+  <h4>This is h4 text</h4>
+  <h5>This is h5 text</h5>
+  <h6>This is h6 text</h6>
+  <h4>position</h4>
+  <p>CSS, her HTML öğesini genellikle CSS Kutu Modeli olarak adlandırılan kendi kutusu olarak kabul eder.
+    Blok düzeyinde öğeler otomatik olarak yeni bir satırda (düşünme başlıkları, paragraflar ve bölümler) başlarken,
+    satır içi öğeler çevreleyen içerikte (resimler veya açıklıklar gibi) yer alır. Öğelerin bu şekilde varsayılan
+    düzenine bir belgenin normal akışı denir,
+    ancak CSS bunu geçersiz kılmak için position özelliğini sunar.</p>
+  <h4>scake()</h4>
+  <p>Bir öğenin ölçeğini değiştirmek için CSS, scale () işleviyle birlikte transform özelliğine sahiptir.
+    Aşağıdaki kod örneği, sayfadaki tüm paragraf öğelerinin boyutunu iki katına çıkarır:</p>
+  <h4>transform in skewX(-32deg)</h4>
+  <div class="fullCard">
+    <div class="cardContent">
+      <div class="cardText">
+        <h4>Google</h4>
+        <p>Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University.</p>
+      </div>
+      <div class="cardLinks">
+        <a href="https://en.wikipedia.org/wiki/Larry_Page" target="_blank" class="links">Larry Page</a>
+        <a href="https://en.wikipedia.org/wiki/Sergey_Brin" target="_blank" class="links">Sergey Brin</a>
+      </div>
+    </div>
+  </div>
+  <br>
+  <h2>Animasyon</h2>
+  <div id="ball"></div><br><br><br><br><br>
+  <div class="back"></div>
+  <div class="heart"></div>
+</body>
+
+</html>
