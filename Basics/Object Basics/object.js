@@ -15,6 +15,7 @@ const person = {
   }
 };
 
+
 person.name
 person.name[0]
 person.age
