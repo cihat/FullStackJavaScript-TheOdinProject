@@ -1,20 +1,20 @@
-function book(title, autor, pages, read) {
+function book(title, autor, pages) {
   this.title = title;
   this.autor = autor;
   this.pages = pages;
-  this.read = function read(isRead) {
-    if (isRead) {
-      console.log("Okundu");
-    }
-    else {
-      console.log("Okunmadı");
-    }
-  }
   this.info = function () {
-    console.log(this.title + " by " + this.autor + " , " +
-      this.pages + "pages" + " , " + this.read());
+    this.isRead = function (isRead) {
+      if (isRead) {
+        console.log("Okundu...");
+      }
+      else {
+        console.log("OKunmadı...");
+      }
+    }
+    return this.title + " by " + this.autor + " , " +
+      this.pages + " pages " + " , " + this.isRead(true);
   }
 }
 
-const hobbit = new book("The Hobbit ", "YAzar ", 500, false)
-hobbit.info();
+const hobbit = new book("The Hobbit ", "YAzar ", 500)
+console.log(hobbit.info());
