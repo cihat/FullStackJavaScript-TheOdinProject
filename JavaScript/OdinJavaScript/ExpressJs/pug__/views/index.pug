@@ -3,7 +3,29 @@ html
         title Merhaba Pug
 
     body
+        - var okul = 'Sakarya Universitesi'
+        - var sehir = 'Sakarya'
+        =okul
+        br
+        div  Bulunduğu sehir #{sehir.toUpperCase()} 
+        hr
+
+        -var sayi = 12;
+        if !sayi
+                  div "Sayi değişkeni yok."
+        else if sayi === 12
+            div "Sayi 12'dir"
+        else 
+            div "Sayi 12 değildir."
+        hr
         =job
         br
         span(style= "color: white; background-color: black") Merhaba #{ name }
-    
+        br
+        include footer.pug
+        include other.pug
+
+        hr
+        ul
+            each val in [1, 2, 3, 4, 5]
+                li= val
