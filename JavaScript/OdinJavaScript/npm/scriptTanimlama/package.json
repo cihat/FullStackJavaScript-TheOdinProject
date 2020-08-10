@@ -1,0 +1,14 @@
+{
+  "name": "script-tanimlama",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "sayHello": "echo 'Merhaba ben Cihat",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Cihat Salik",
+  "license": "MIT"
+}
