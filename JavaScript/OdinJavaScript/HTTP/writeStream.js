@@ -2,7 +2,7 @@ const fs = require('fs');
 const file = 'video.mp4';
 
 const readStream = fs.createReadStream(file);
-const writeStream = fs.createWriteStream('new.mp4');
+const writeStream = fs.createWriteStream('new2.mp4');
 let progress = 0;
 
 fs.stat(file, (err, data) => {
