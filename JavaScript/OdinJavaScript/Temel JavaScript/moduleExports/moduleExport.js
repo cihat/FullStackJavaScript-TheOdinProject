@@ -6,5 +6,4 @@ function bar() {
   return 'bar';
 }
 
-module.exports.foo = foo;
-module.exports.bar = bar;
+module.exports = { foo, bar }
