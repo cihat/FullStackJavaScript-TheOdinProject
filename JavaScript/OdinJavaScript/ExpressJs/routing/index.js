@@ -1,5 +1,4 @@
-const express = require('express');
-const app = express();
+
 /*
  get, post, put, delete, all
  ? (zorunlu olmayan) ~ me(hm)?et
@@ -20,6 +19,3 @@ app.get('/contact', (req, res) => {
   res.send('Selam burası app.all() ');
 }) */
 
-app.listen(3000, () => {
-  console.log('Express Server Calıştı.');
-})
