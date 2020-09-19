@@ -1,10 +1,11 @@
 html {
   font-size: 10px;
-  background: url(https://avatars0.githubusercontent.com/u/53409354?s=400&u=60121a1fe056d699a3769037e5dbd2840be15b70&v=4) bottom center;
+  background: url('https://i.imgur.com/b9r5sEL.jpg') bottom center;
   background-size: cover;
 }
 
-body,html {
+body,
+html {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
@@ -28,7 +29,7 @@ body,html {
   width: 10rem;
   text-align: center;
   color: white;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
   text-shadow: 0 0 .5rem black;
 }
 
